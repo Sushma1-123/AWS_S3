@@ -13,6 +13,7 @@ def lambda_handler(event, context):
         print(f"🪣 Bucket: {bucket}")
         print(f"📄 Key: {key}")
 
+
         response = s3.get_object(Bucket=bucket, Key=key)
         content = response['Body'].read().decode('utf-8')
 
