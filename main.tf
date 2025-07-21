@@ -26,7 +26,7 @@ resource "aws_s3_object" "output_folder" {
 # IAM Role for Lambda
 # ------------------------------
 resource "aws_iam_role" "lambda_exec_role" {
-  name = "1413_lambda_exec_role_july02"
+  name = "1448lambda_exec_role_july21"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
